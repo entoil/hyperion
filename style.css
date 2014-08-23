@@ -1,0 +1,216 @@
+@font-face
+{
+font-family: Andalus;
+src: url('andlso.ttf')
+}
+
+
+body {
+	background-color: #2E2D55;
+	background-image: url(images/bg.png);
+	background-repeat: no-repeat;
+	background-position: 30% -10%;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+}
+#outer {
+	margin: auto;
+	width: 936px;
+	height: 100%;
+	margin-bottom: 30px;
+}
+#nav {
+	background-color: #2E2D55;
+	background-image: url(images/navbg.png);
+	background-repeat: repeat-x;
+	height: 53px;
+	width: 906px;
+	font-size: 16px;
+	letter-spacing: 2px;
+	padding-left: 30px;
+	font-family: Andalus, Georgia;
+}
+#header {
+	height: 230px;
+	font-family: Andalus, Georgia;
+	text-shadow: 5px 5px 5px #000;
+}
+#title {
+	font-size: 57px;
+	font-weight: bold;
+	padding-top: 90px;
+	padding-left: 100px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+#desc {
+	font-size: 18px;
+	letter-spacing: 2px;
+	padding-top: 10px;
+	padding-left: 100px;
+	text-shadow: 5px 5px 5px #000;
+}
+#footer {
+	color: #FFF;
+	font-size: 10px;
+	padding-top: 20px;
+	text-align: center;
+}
+#nav li {
+	opacity: 0.9;
+	display: inline-table;
+	padding: 14px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#nav a li {
+	color: #FFF;
+	text-decoration: none;
+}
+#nav li:hover {
+	background: #32314D;
+	
+}
+#nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+#content {
+	background-color: #21203C;
+	width: 936px;
+	display: table;
+	clear: both;
+}
+
+#main {
+	background-color: #161427;
+	width: 664px;
+	float: left;
+	padding-bottom: 80px;
+	min-height: 700px;
+}
+
+#side {
+	float: right;
+	width: 207px;
+	background: #21203C;
+	padding: 30px;
+	position: relative;
+	height: 100%;
+}
+
+#content p {
+	opacity: 0.8;
+}
+
+#content h2 {
+	padding: 0;
+	margin: 0;
+	color: #FFFCA4;
+	font-family: Andalus, Georgia;
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+
+#side h2 {
+	padding: 0;
+	margin: 0;
+	color: #F0D362;
+	font-family: Andalus, Georgia;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+h3 {
+	opacity: 0.9;
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 12px;
+}
+
+a.comments {
+	font-size: 10px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+div.article {
+	padding: 40px;
+}
+div.article img {
+	margin: 5px;
+	margin-left: 0px;
+}
+
+div.task {
+	margin-top: 20px;
+}
+
+div.task strong {
+	font-size: 14px;
+}
+
+div.recent {
+	margin-top: 20px;
+}
+
+div.recent em {
+	font-size: 10px;
+}
+
+div.recent a {
+	color: #9998C9;
+}
+table.parent td {
+	padding: 10px;
+	vertical-align: top;
+}
+table.reply td {
+	padding: 10px;
+	vertical-align: top;
+}
+table.reply textarea {
+	font-family:inherit;
+	border: 1px solid #9998C9;
+	background: #161427;
+	border-radius: 5px;
+	padding: 10px;
+	color: #FFF;
+	width: 440px;
+	height: 100px;
+opacity: 0.8;
+}
+table.reply input {
+	font-family:inherit;
+	border: 1px solid #9998C9;
+	background: #21203C;
+	border-radius: 5px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+color: #9998C9;
+margin-top: 10px;
+	float: right;
+}
+table.child td {
+	padding: 10px;
+	padding-left: 15px;
+	vertical-align: top;
+}
+
+table.child td:nth-child(2) {
+	border-radius: 5px;
+	background: #21203C;
+}
+i.date {
+	opacity: 0.5;
+}
+table {
+	margin-top: 10px;
+}
