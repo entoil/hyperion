@@ -1,8 +1,8 @@
-INSERT INTO `hyperion`.`users` (`username`,`password`,`email`) 
-VALUES ('krisn', '123123', 'krisn@mail.com');
+INSERT INTO `hyperion`.`users` (`username`,`password`,`email`, `permission`) 
+VALUES ('krisn', '123123', 'krisn@mail.com', 2);
 
-INSERT INTO `hyperion`.`users` (`username`,`password`,`email`) 
-VALUES ('goates', '123123', 'skye@gmail.com');
+INSERT INTO `hyperion`.`users` (`username`,`password`,`email`, `permission`) 
+VALUES ('goates', '123123', 'skye@gmail.com', 1);
 
 INSERT INTO `hyperion`.`users` (`username`,`password`,`email`) 
 VALUES ('0001', '123123', 'ff112@mail.com');

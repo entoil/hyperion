@@ -4,8 +4,10 @@ CREATE TABLE `users` (
   `password` varchar(45) NOT NULL,
   `email` varchar(45) DEFAULT NULL,
   `avatar` varchar(45) DEFAULT NULL,
+  `permission` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`uid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
 
 CREATE TABLE `events` (
   `eid` int(11) NOT NULL AUTO_INCREMENT,
@@ -40,5 +42,14 @@ CREATE TABLE `reply` (
   KEY `uid_idx2` (`uid`),
   CONSTRAINT `uid_reply` FOREIGN KEY (`uid`) REFERENCES `users` (`uid`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `tid` FOREIGN KEY (`tid`) REFERENCES `thread` (`tid`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `settings` (
+  `name` varchar(45) NOT NULL,
+  `description` varchar(45) DEFAULT NULL,
+  `banner` varchar(45) DEFAULT NULL,
+  `theme` varchar(45) DEFAULT NULL,
+  `game` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
