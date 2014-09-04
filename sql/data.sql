@@ -1,3 +1,15 @@
+INSERT INTO `hyperion`.`settings` (`name`,`description`,`banner`,`theme`,`game`)
+VALUES ('Hyperion', 'TERA Guild Website', 'bg.png', 'purple', 'TERA');
+
+INSERT INTO `hyperion`.`pages` (`name`)
+VALUES('Voice');
+
+INSERT INTO `hyperion`.`pages` (`name`)
+VALUES('About');
+
+INSERT INTO `hyperion`.`pages` (`name`)
+VALUES('Gallery');
+
 INSERT INTO `hyperion`.`users` (`username`,`password`,`email`, `permission`) 
 VALUES ('krisn', '123123', 'krisn@mail.com', 2);
 
@@ -51,3 +63,5 @@ VALUES(2, 2, '2014-09-09 12:20:00', '):');
 
 INSERT INTO `hyperion`.`reply`(`tid`,`uid`,`postdate`,`content`)
 VALUES(2, 4, '2014-09-19 09:07:00', 'Okay.');
+
+
